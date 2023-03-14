@@ -1,4 +1,4 @@
-# Control NordVPN from your Terminal on MacOS (with Tunnelblick!)
+# NordVPN on Mac from your Terminal (with Tunnelblick!)
 
 This is a simple script in Python to handle connection/disconnection to a VPN configuration via Tunnelblick. The idea
 came from the lack of an option, on MacOS, to handle NordVPN via command line, possible in Linux with the official
@@ -30,5 +30,11 @@ The script take one positional argument referring to the command to perform. The
 - `disconnect`: disconnect from the current VPN configuration.
 - `status`: print the status of the current VPN configuration.
 - `configs`: print all available configurations that has been imported to Tunnelblick.
+
+
+## Further documentation
+
+The shell commands invoked by the python script use Apple `osascript` to interact with Tunnelblick.
+Here is Tunnelblick's [documentation](https://tunnelblick.net/cAppleScriptSupport.html) for further information.
 
 
